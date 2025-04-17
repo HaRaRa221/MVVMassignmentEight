@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+            xmlns:vm="clr-namespace:MVVMassignmentEight.Models.ViewModels"  
+            x:Class="MVVMassignmentEight.Views.MainPage">
+
+
+
+    <ScrollView>  
+       <VerticalStackLayout  
+         Padding="20">  
+
+           <TitleBar Title="Add Contact" />  
+
+           <Entry x:Name="name" Placeholder="Name" Text="{Binding Name}" />  
+           <Entry x:Name="email" Placeholder="Email" Text="{Binding Email}" />  
+           <Entry x:Name="phoneNumber" Placeholder="Phone Number" Text="{Binding PhoneNumber}" />  
+
+           <Entry x:Name="description" Placeholder="Description" Text="{Binding Description}" />
+
+            <Button x:Name="saveButton" Text="Save" Command="{Binding SaveContactCommand}" />
+
+        </VerticalStackLayout>  
+   </ScrollView>  
+
+</ContentPage>
